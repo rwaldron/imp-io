@@ -1,7 +1,7 @@
 {
   "name": "imp-io",
   "description": "Imp IO",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/rwaldron/imp-io",
   "author": {
     "name": "Rick Waldron <waldron.rick@gmail.com>",
