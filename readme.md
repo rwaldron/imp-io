@@ -30,8 +30,7 @@ The "Hello World" of microcontroller programming:
 ```js
 var Imp = require("imp-io");
 var board = new Imp({
-  agent: process.env.IMP_AGENT_ID,
-  type: ("imp001" || "April")
+  agent: process.env.IMP_AGENT_ID
 });
 
 board.on("ready", function() {
@@ -57,13 +56,12 @@ var Imp = require("imp-io");
 
 var board = new five.Board({
   io: new Imp({
-    agent: process.env.IMP_AGENT_ID,
-    type: ("imp001" || "April")
+    agent: process.env.IMP_AGENT_ID
   })
 });
 
 board.on("ready", function() {
-  var led = new five.Led("D7");
+  var led = new five.Led(9);
   led.blink();
 });
 ```
