@@ -38,7 +38,8 @@
     "remapped": "~0.2.1",
     "es6-promise": "latest",
     "graceful-fs": "~2.0.2",
-    "request": "latest"
+    "request": "latest",
+    "temporal": "latest"
   },
   "devDependencies": {
     "rewire": "~2.0.0",
