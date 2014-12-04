@@ -7,7 +7,9 @@
     "name": "Rick Waldron <waldron.rick@gmail.com>",
     "email": "waldron.rick@gmail.com"
   },
-  "contributors": [],
+  "contributors": [
+    { "name": "Donovan Buck", "email": "<donovan@donovan.bz>" }
+  ],
   "keywords": [
     "imp",
     "io",
