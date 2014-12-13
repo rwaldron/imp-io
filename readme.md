@@ -9,9 +9,26 @@ Imp-io is a Firmata-compatibility IO class for writing node programs that intera
 ### Getting Started
 
 In order to use the imp-io library, you will need to upload the special
-[tyrion](https://github.com/rwaldron/tyrion) agent and device code through Electric Imp's [IDE](https://ide.electricimp.com/login). We recommend you review [Electric Imp's Getting Started](http://www.electricimp.com/docs/gettingstarted/) before continuing.
+[tyrion](https://github.com/rwaldron/tyrion) **agent** and **device** code through Electric Imp's [IDE](https://ide.electricimp.com/login). We recommend you review [Electric Imp's Getting Started](http://www.electricimp.com/docs/gettingstarted/) before continuing.
 
-We also recommend storing your agent ID in a dot file so it can be accessed as a property of `process.env`. Create a file in your home directory called `.imprc` that contains:
+#### Tyrion Setup
+
+1. Follow Electric Imp's [Getting Started](https://electricimp.com/docs/gettingstarted/) instructions to set up a wifi connection to your Electric Imp device. 
+2. Once your Imp is setup, open the [IDE](https://ide.electricimp.com/ide) (familiarize yourself [here](https://electricimp.com/docs/gettingstarted/ide/)) and click **Create New Model**, give it a name and assign it to your device.
+3. Paste the contents of `agent.nut` into the **Agent** pane and `device.nut` into the **Device** pane: 
+![Imp Setup](https://raw.githubusercontent.com/rwaldron/tyrion/master/imp-setup.png)
+4. Expand the **Active Model** in the column on the left by click on the rightward arrow. The model will appear below, click on the model.
+4. Click **Build and Run** to finish preparing your Electric Imp.
+
+
+#### Imp-IO Setup
+
+In the Electric Imp IDE, locate and copy the **agent id**, located in **agent url** Look for the agent id located in the agent url: 
+
+![Imp Setup](https://raw.githubusercontent.com/rwaldron/imp-io/master/tyrion-install.png)
+
+
+Store your agent ID in a dot file so it can be accessed as a property of `process.env`. Create a file in your home directory called `.imprc` that contains:
 
 ```sh
 export IMP_AGENT_ID="your agent id"
