@@ -1,7 +1,7 @@
 {
   "name": "imp-io",
-  "description": "Imp IO",
-  "version": "0.1.1",
+  "description": "Electric Imp IO Plugin for Johnny-Five",
+  "version": "0.1.2",
   "homepage": "https://github.com/rwaldron/imp-io",
   "author": {
     "name": "Rick Waldron <waldron.rick@gmail.com>",
@@ -11,10 +11,13 @@
     { "name": "Donovan Buck", "email": "<donovan@donovan.bz>" }
   ],
   "keywords": [
+    "electric imp",
     "imp",
     "io",
     "arduino",
     "intel",
+    "galileo",
+    "edison",
     "firmata",
     "johnny-five"
   ],
