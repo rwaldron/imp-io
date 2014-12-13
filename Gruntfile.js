@@ -1,5 +1,3 @@
-var request = require("request");
-
 module.exports = function(grunt) {
 
   var task = grunt.task;
@@ -19,7 +17,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON("package.json"),
     nodeunit: {
       tests: [
-        "test/imp-io.js",
+        "test/imp.js",
       ]
     },
     jshint: {
@@ -82,6 +80,44 @@ module.exports = function(grunt) {
         }
       }
     },
+    jscs: {
+      files: {
+        src: [
+          "Gruntfile.js",
+          "lib/**/!(johnny-five)*.js",
+          "test/**/*.js",
+          "eg/**/*.js",
+          ]
+      },
+      options: {
+        config: ".jscsrc",
+        requireCurlyBraces: [
+          "if",
+          "else",
+          "for",
+          "while",
+          "do",
+          "try",
+          "catch",
+        ],
+        disallowNewlineBeforeBlockStatements: true,
+        requireSpaceBeforeBlockStatements: true,
+        requireParenthesesAroundIIFE: true,
+        requireSpacesInConditionalExpression: true,
+        // requireSpaceBeforeKeywords: true,
+        requireSpaceAfterKeywords: [
+          "if", "else",
+          "switch", "case",
+          "try", "catch",
+          "do", "while", "for",
+          "return", "typeof", "void",
+        ],
+        validateQuoteMarks: {
+          mark: "\"",
+          escape: true
+        }
+      }
+    },
     watch: {
       src: {
         files: [
@@ -102,8 +138,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-nodeunit");
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-jsbeautifier");
+  grunt.loadNpmTasks("grunt-jscs");
+
+  grunt.registerTask("default", ["jshint", "jscs", "nodeunit"]);
 
   // grunt.registerTask("default", ["jshint", "nodeunit"]);
-  grunt.registerTask("default", ["jshint"]);
+  // grunt.registerTask("default", ["jshint"]);
 
 };
