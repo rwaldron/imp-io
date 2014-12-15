@@ -39,21 +39,20 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
+    "colors": "~1.0.3",
     "es6-shim": "latest",
-    "remapped": "~0.2.1",
-    "es6-promise": "latest",
-    "graceful-fs": "~2.0.2",
     "request": "latest",
     "temporal": "latest"
   },
   "devDependencies": {
-    "rewire": "~2.0.0",
-    "sinon": "~1.7.3",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-jsbeautifier": "~0.2.2"
+    "grunt-jsbeautifier": "~0.2.2",
+    "grunt-jscs": "^1.0.0",
+    "rewire": "^2.1.3",
+    "sinon": "~1.7.3"
   },
   "scripts": {
     "test": "grunt"
