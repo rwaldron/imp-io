@@ -1,7 +1,7 @@
 {
   "name": "imp-io",
   "description": "Electric Imp IO Plugin for Johnny-Five",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "homepage": "https://github.com/rwaldron/imp-io",
   "author": {
     "name": "Rick Waldron <waldron.rick@gmail.com>",

@@ -1,4 +1,4 @@
-# imp-io
+# Imp-IO
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/rwaldron/imp-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -8,8 +8,8 @@ Imp-io is a Firmata-compatibility IO class for writing node programs that intera
 
 ### Getting Started
 
-In order to use the imp-io library, you will need to upload the special
-[tyrion](https://github.com/rwaldron/tyrion) **agent** and **device** code through Electric Imp's [IDE](https://ide.electricimp.com/login). We recommend you review [Electric Imp's Getting Started](http://www.electricimp.com/docs/gettingstarted/) before continuing.
+To communicate with an Electric Imp using Johnny-Five w/ Imp-IO, you will need to upload the special
+[tyrion](https://github.com/rwaldron/tyrion) **agent** and **device** firmware through Electric Imp's [IDE](https://ide.electricimp.com/login). We recommend you review [Electric Imp's Getting Started](http://www.electricimp.com/docs/gettingstarted/) before continuing.
 
 #### Tyrion Setup
 
