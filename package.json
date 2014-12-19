@@ -1,14 +1,15 @@
 {
   "name": "imp-io",
   "description": "Electric Imp IO Plugin for Johnny-Five",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/rwaldron/imp-io",
   "author": {
     "name": "Rick Waldron <waldron.rick@gmail.com>",
     "email": "waldron.rick@gmail.com"
   },
   "contributors": [
-    { "name": "Donovan Buck", "email": "<donovan@donovan.bz>" }
+    { "name": "Donovan Buck", "email": "<donovan@donovan.bz>" },
+    { "name": "Sue Lockwood", "email": "<deathbearbrown@gmail.com>" }
   ],
   "keywords": [
     "electric imp",
