@@ -1,4 +1,4 @@
-# imp-io
+# Imp-IO
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/rwaldron/imp-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -8,14 +8,14 @@ Imp-io is a Firmata-compatibility IO class for writing node programs that intera
 
 ### Getting Started
 
-In order to use the imp-io library, you will need to upload the special
-[tyrion](https://github.com/rwaldron/tyrion) **agent** and **device** code through Electric Imp's [IDE](https://ide.electricimp.com/login). We recommend you review [Electric Imp's Getting Started](http://www.electricimp.com/docs/gettingstarted/) before continuing.
+To communicate with an Electric Imp using Johnny-Five w/ Imp-IO, you will need to upload the special
+[Tyrion](https://github.com/rwaldron/tyrion) **[agent](https://github.com/rwaldron/tyrion/blob/master/agent.nut)** and **[device](https://github.com/rwaldron/tyrion/blob/master/device.nut)** firmware through Electric Imp's [IDE](https://ide.electricimp.com/login). We recommend you review [Electric Imp's Getting Started](http://www.electricimp.com/docs/gettingstarted/) before continuing.
 
 #### Tyrion Setup
 
 1. Follow Electric Imp's [Getting Started](https://electricimp.com/docs/gettingstarted/) instructions to set up a wifi connection to your Electric Imp device. 
 2. Once your Imp is setup, open the [IDE](https://ide.electricimp.com/ide) (familiarize yourself [here](https://electricimp.com/docs/gettingstarted/ide/)) and click **Create New Model**, give it a name and assign it to your device.
-3. Paste the contents of `agent.nut` into the **Agent** pane and `device.nut` into the **Device** pane: 
+3. Paste the contents of [`agent.nut`](https://raw.githubusercontent.com/rwaldron/tyrion/master/agent.nut) into the **Agent** pane and [`device.nut`](https://raw.githubusercontent.com/rwaldron/tyrion/master/device.nut) into the **Device** pane: 
 ![Imp Setup](https://raw.githubusercontent.com/rwaldron/tyrion/master/imp-setup.png)
 4. Expand the **Active Model** in the column on the left by click on the rightward arrow. The model will appear below, click on the model.
 4. Click **Build and Run** to finish preparing your Electric Imp.
