@@ -40,7 +40,6 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "colors": "~1.0.3",
     "es6-shim": "latest",
     "request": "latest",
     "temporal": "latest"
