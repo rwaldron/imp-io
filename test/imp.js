@@ -36,8 +36,6 @@ function restore(target) {
 exports["Imp"] = {
   setUp: function(done) {
 
-    this.clock = sinon.useFakeTimers();
-
     this.imp = new Imp({
       agent: "[[AGENT_ID]]"
     });
