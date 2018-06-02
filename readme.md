@@ -1,8 +1,7 @@
 # Imp-IO
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/rwaldron/imp-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![Build Status](https://travis-ci.org/rwaldron/imp-io.png?branch=master)](https://travis-ci.org/rwaldron/imp-io)
+[![Join the chat at https://gitter.im/rwaldron/imp-io](https://img.shields.io/gitter/room/TechnologyAdvice/Stardust.svg?style=square)](https://gitter.im/rwaldron/imp-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Imp-io is a Firmata-compatibility IO class for writing node programs that interact with [Electric Imp devices](http://www.electricimp.com/docs/). Imp-io was built at [Bocoup](http://bocoup.com/)
 
